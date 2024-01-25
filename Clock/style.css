@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://thumbs.dreamstime.com/b/smooth-mesh-blurred-background-multi-color-gradient-pattern-modern-watercolor-style-backdrop-vector-pastel-foil-futuristic-177071587.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page {
+  overflow: hidden;
+  margin-left: 40%;
+  margin-top: 200px;
+}
+
+#clock {
+  width: 15rem;
+  height: 15rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+#second-hand {
+  border: 2px solid black;
+  position: absolute;
+  width: 6rem;
+  top: 49%;
+  left: 1.5%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.005s ease;
+}
+
+#minute-hand {
+  border: 2.5px solid black;
+  position: absolute;
+  width: 6rem;
+  top: 49%;
+  left: 1.5%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.005s ease;
+}
+
+#hour-hand {
+  border: 2.5px solid red;
+  position: absolute;
+  width: 5rem;
+  top: 49%;
+  left: 9%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.005s ease;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: white;
+}
