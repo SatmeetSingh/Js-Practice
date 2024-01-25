@@ -6,8 +6,7 @@ function setDate() {
   let today = new Date();
   let Second = today.getSeconds();
   let Minute = today.getMinutes();
-  //   let Hour = today.getHours();
-  let Hour = 15;
+  let Hour = today.getHours();
 
   const secondDegres = 90 + (Second / 60) * 360;
   const minuteDegres = 90 + (Minute / 60) * 360;
