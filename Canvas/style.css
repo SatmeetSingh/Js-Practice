@@ -1,7 +1,9 @@
+/* Resetting default margin and background color */
 html,
 body {
   margin: 0;
   background-color: gainsboro;
+  overflow: hidden;
 }
 
 .box {
@@ -12,17 +14,8 @@ body {
   gap: 5px;
 }
 
-.color {
-  padding: 10px;
-  border: 1px solid black;
-  height: 30%;
-  object-fit: contain;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Common styles for .color and .color1 */
+.color,
 .color1 {
   padding: 10px;
   border: 1px solid black;
@@ -34,10 +27,23 @@ body {
   align-items: center;
 }
 
-.color input {
+/* Styles for .color */
+.color {
+  background-color: white;
+}
+
+/* Styles for .color1 */
+.color1 {
+  background-color: lightgray; /* Adjust color as needed */
+}
+
+/* Styles for input elements inside .color and .color1 */
+.color input,
+.color1 input {
   margin: 5px;
 }
 
+/* Styles for the canvas */
 .canvas {
   background-color: rgb(102, 92, 76);
   width: 80%;
@@ -45,18 +51,22 @@ body {
   position: relative;
 }
 
+/* Styles for the drawing area */
 .canvas #draw {
   position: absolute;
   background-color: white;
-
   border: 1px solid black;
 }
 
-.btn {
-  padding: 20px 20px;
+/* Common styles for buttons (.btn and .btn1) */
+.btn,
+.btn1 {
+  padding: 15px 15px; /* Adjust padding as needed */
   background-color: white;
+  transform: scale(1.2);
 }
 
-.btn::after {
-  transform: scale(1.1);
+/* Styles specific to .btn1 */
+.btn1 {
+  padding: 10px 5px; /* Adjust padding as needed */
 }
