@@ -1,0 +1,62 @@
+html,
+body {
+  margin: 0;
+  background-color: gainsboro;
+}
+
+.box {
+  background-color: white;
+  height: 19.75vh;
+  border-bottom: 1px solid black;
+  display: flex;
+  gap: 5px;
+}
+
+.color {
+  padding: 10px;
+  border: 1px solid black;
+  height: 30%;
+  object-fit: contain;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color1 {
+  padding: 10px;
+  border: 1px solid black;
+  height: 30%;
+  object-fit: contain;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color input {
+  margin: 5px;
+}
+
+.canvas {
+  background-color: rgb(102, 92, 76);
+  width: 80%;
+  height: 79.7vh;
+  position: relative;
+}
+
+.canvas #draw {
+  position: absolute;
+  background-color: white;
+
+  border: 1px solid black;
+}
+
+.btn {
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.btn::after {
+  transform: scale(1.1);
+}
